@@ -21,11 +21,260 @@
     <title>Earth becoming hell?</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="2c9c4153-be1f-49a7-a084-59e6d885201b"></script>
     <link rel="stylesheet" href="main.css">
-    <style>
+  <style>
+    :root {
+      --blue: #E6F2FF;
+      --light-blue: #F0F8FF;
+      --blue-accent: #0066CC;
+      --blue-shadow: #B3D9FF;
+      --blue-dark: #004080;
+      
+      --red: #FFE6E6;
+      --light-red: #FFF0F0;
+      --red-accent: #CC0000;
+      --red-shadow: #FFB3B3;
+      --red-dark: #800000;
+    }
+    
+    body {
+      background: var(--blue);
+      color: #333;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      transition: background 0.5s ease;
+    }
+    
+    section {
+      border: 4px solid;
+      margin: 30px 0;
+      padding: 30px;
+      background: var(--light-blue);
+      box-shadow: 8px 8px 0 var(--blue-shadow);
+      transition: all 0.5s ease;
+      position: relative;
+    }
+    
+    h1 {
+      margin: 0 0 20px;
+      font-size: 2.8em;
+      text-transform: uppercase;
+      color: var(--blue-accent);
+      letter-spacing: 2px;
+      line-height: 1.2;
+      transition: all 0.5s ease;
+    }
+    
+    .lead {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: var(--blue-dark);
+      margin-bottom: 25px;
+      transition: all 0.5s ease;
+    }
+    
+    .subpoint {
+      font-size: 1.4em;
+      margin: 20px 0;
+      padding-left: 15px;
+      border-left: 3px solid var(--blue-accent);
+      transition: all 0.5s ease;
+    }
+    
+    .highlight {
+      font-size: 1.6em;
+      background: var(--blue-shadow);
+      padding: 15px;
+      margin: 25px 0;
+      border: 2px dashed var(--blue-accent);
+      transition: all 0.5s ease;
+    }
+    
+    .detail {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    
+    /* Color transitions */
+    body.scrolled-25 {
+      background: #FFE6F2;
+    }
+    
+    body.scrolled-25 section {
+      background: #FFF0F8;
+      border-color: #CC0066;
+      box-shadow: 8px 8px 0 #FFB3D9;
+    }
+    
+    body.scrolled-25 h1 {
+      color: #CC0066;
+    }
+    
+    body.scrolled-25 .lead {
+      color: #800040;
+    }
+    
+    body.scrolled-25 .subpoint {
+      border-left-color: #CC0066;
+    }
+    
+    body.scrolled-25 .highlight {
+      background: #FFB3D9;
+      border-color: #CC0066;
+    }
+    
+    body.scrolled-50 {
+      background: #FFE6E6;
+    }
+    
+    body.scrolled-50 section {
+      background: #FFF0F0;
+      border-color: #CC0000;
+      box-shadow: 8px 8px 0 #FFB3B3;
+    }
+    
+    body.scrolled-50 h1 {
+      color: #CC0000;
+    }
+    
+    body.scrolled-50 .lead {
+      color: #800000;
+    }
+    
+    body.scrolled-50 .subpoint {
+      border-left-color: #CC0000;
+    }
+    
+    body.scrolled-50 .highlight {
+      background: #FFB3B3;
+      border-color: #CC0000;
+    }
+    
+    body.scrolled-75 {
+      background: #FFCCCC;
+    }
+    
+    body.scrolled-75 section {
+      background: #FFE0E0;
+      border-color: #990000;
+      box-shadow: 8px 8px 0 #FF9999;
+    }
+    
+    body.scrolled-75 h1 {
+      color: #990000;
+    }
+    
+    body.scrolled-75 .lead {
+      color: #660000;
+    }
+    
+    body.scrolled-75 .subpoint {
+      border-left-color: #990000;
+    }
+    
+    body.scrolled-75 .highlight {
+      background: #FF9999;
+      border-color: #990000;
+    }
+    
+    body.scrolled-100 {
+      background: #FF9999;
+    }
+    
+    body.scrolled-100 section {
+      background: #FFCCCC;
+      border-color: #660000;
+      box-shadow: 8px 8px 0 #FF6666;
+    }
+    
+    body.scrolled-100 h1 {
+      color: #660000;
+    }
+    
+    body.scrolled-100 .lead {
+      color: #400000;
+    }
+    
+    body.scrolled-100 .subpoint {
+      border-left-color: #660000;
+    }
+    
+    body.scrolled-100 .highlight {
+      background: #FF6666;
+      border-color: #660000;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Our Precious Earth</h1>
+    <p class="lead">This beautiful blue planet is our only home</p>
+    
+    <p class="subpoint">A delicate balance of ecosystems</p>
+    <p class="detail">Everything from the tiniest plankton to the largest whales plays a vital role</p>
+    
+    <p class="subpoint">Nature's incredible resilience</p>
+    <p class="detail">When given a chance, ecosystems can recover in amazing ways</p>
+    
+    <p class="highlight">But this resilience has limits - we're testing those limits right now</p>
+  </section>
 
-    </style>
-  </head>
-  <body class="bg-rose-300">
-		<p class="text-lg">hi</p>
-  </body>
+  <section>
+    <h1>Warning Signs</h1>
+    <p class="lead">The changes are happening faster than predicted</p>
+    
+    <p class="subpoint">You can see it in your own backyard</p>
+    <p class="detail">Earlier springs, later falls, and more extreme weather events</p>
+    
+    <p class="subpoint">Global temperature records keep breaking</p>
+    <p class="detail">The past decade has been the hottest in recorded history</p>
+    
+    <p class="highlight">We're entering uncharted territory with climate systems</p>
+  </section>
+
+  <section>
+    <h1>Critical Thresholds</h1>
+    <p class="lead">We're approaching dangerous tipping points</p>
+    
+    <p class="subpoint">Ice sheets destabilizing</p>
+    <p class="detail">Greenland and Antarctica are losing ice six times faster than in the 1990s</p>
+    
+    <p class="subpoint">Ocean currents slowing</p>
+    <p class="detail">The Atlantic circulation system is the weakest it's been in 1600 years</p>
+    
+    <p class="highlight">Some changes, once triggered, cannot be reversed in human timescales</p>
+  </section>
+
+  <section>
+    <h1>Code Red Emergency</h1>
+    <p class="lead">This is the decisive decade for action</p>
+    
+    <p class="subpoint">Every fraction of a degree matters</p>
+    <p class="detail">The difference between 1.5°C and 2°C warming is catastrophic</p>
+    
+    <p class="subpoint">We have all the solutions we need</p>
+    <p class="detail">Renewable energy, sustainable agriculture, and circular economies are ready now</p>
+    
+    <p class="highlight">What's missing is the political will and collective action - that's where you come in</p>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      
+      document.body.classList.remove('scrolled-25', 'scrolled-50', 'scrolled-75', 'scrolled-100');
+      
+      if (scrollPercentage >= 100) {
+        document.body.classList.add('scrolled-100');
+      } else if (scrollPercentage >= 75) {
+        document.body.classList.add('scrolled-75');
+      } else if (scrollPercentage >= 50) {
+        document.body.classList.add('scrolled-50');
+      } else if (scrollPercentage >= 25) {
+        document.body.classList.add('scrolled-25');
+      }
+    });
+  </script>
+</body>
 </html>
